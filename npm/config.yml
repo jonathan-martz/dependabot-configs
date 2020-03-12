@@ -1,0 +1,11 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/src/"
+    update_schedule: "live"
+    default_reviewers:
+      - "jonathan-martz"
+    automerged_updates:
+      - match:
+          dependency_type: "production"
+          update_type: "semver:patch"
